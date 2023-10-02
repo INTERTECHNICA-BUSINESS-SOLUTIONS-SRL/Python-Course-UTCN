@@ -1,0 +1,106 @@
+I. Developing in Python
+==========================
+
+1. The Python runtime
+The Python runtime is the core prerequisite for Python development. There are different Python distributions, the one we will use for this course is the standard Python distribution offered by Python foundation.
+
+    Navigate to https://www.python.org/downloads;
+    Download and install the latest Python available version;
+    A set of good installation instructions can be found at: https://www.digitalocean.com/community/tutorials/install-python-windows-10.
+
+2. The Visual Studio Code IDE
+The Visual Studio Code is the IDE we will use for our course. It is free, open source, cross-platform and this lowers significantly the barriers to enter in the world of Python development.
+
+    Navigate to https://code.visualstudio.com/download;
+    Download and install Visual Studio Code;
+    A set of good installation instructions can be found at: https://code.visualstudio.com/docs/setup/setup-overview;
+    Perform the technical setup as described in the getting started for Python in VIsual Studio Code: https://code.visualstudio.com/docs/python/python-tutorial.
+
+3. The Jupyter Notebook platform
+The Jupyter Notebook platform is the main platform we will be using for practice and homework. Furthermore, we will use a free service offered by Google, more specifically the Google Colab platform.
+
+    Ensure that you have an active Google account. Navigate to https://colab.research.google.com/;
+    Execute the introductory notebook (can also be found at https://colab.research.google.com/notebooks/intro.ipynb);
+    A good overview of Google Colab can be found at: https://colab.research.google.com/notebooks/basic_features_overview.ipynb.
+	
+II. Basic Language Syntax
+=============================
+
+1. Code comments
+From the standpoint of best practices in usage of code comments, please consider the following statements:
+ 
+
+    It is better to have obsolete code comments than no code comments at all;
+    As a general rule code comments are not good for maintainability since they take extra effort to be maintained as well;
+    It is best to comment only the important design or implementation decisions, there is no need to document obvious information;
+    Good code comments help teamwork and accelerate new team members ramp up.
+
+Analyze the statements above and identify the ones that are veridic or not. Explain your choice.
+
+2. Code blocks
+Regarding the support of Python for code blocks, please consider the following statements:
+ 
+
+    Code blocks have their own indentation in the source code;
+    If a statement from the code block fails to execute, the Python interpreter will continue the execution of the next statement;
+    Unlike source code inside the function bodies which constitute a code block, the source code inside conditional branches do not constitute a code block;
+    Code blocks have their own execution frames defining the context on which the code block is actually executed.
+
+Analyze the statements above and identify the ones that are veridic or not. Explain your choice.
+
+3. VariablesRegarding the Python's for variables, please consider the following statements:
+ 
+
+    Variables must be first declared before assigning any value to them;
+    Reading data from a deleted variable will return no result;
+    Variable name can contain digits but must not start with digits;
+    The variable name _____ is a valid variable name.
+
+Analyze the statements above and identify the ones that are veridic or not. Explain your choice.
+
+4. Source code correction
+Considering the following source code:
+ 
+
+i_1 = 1
+i_2 = I_1 + 1
+del _2
+
+Correct this source code so it runs with no errors and without creating new variables.
+
+
+III. Basic Data Types
+===================================
+
+1. Numerical data types
+Given the following assignments:
+
+val_1 = "3"
+val_2 = "2.0"
+val_3 = ".1"
+
+    Calculate the average of these values as a float result (numbers will be converted to float);
+    Calculate the val_1^val_2^val3 where "^" means exponential.
+
+2. Text data type
+Given the following data:
+ 
+name = "John"
+surname = "Smith"
+age = 50
+
+Print the data in the following format:
+
+Name:       John
+Surname:    Smith
+Age:        50
+
+Mind that between the label and the value we have tab characters in order to ensure that values are properly aligned.
+
+3. Array data type
+We have the following use case related to element selection from a source array having 100 elements: 
+
+    Generation of an index array for selecting even elements from the source array;
+    Generation of an index array for selecting every third element from the start of the source array until we reach the index 50.
+
+Please implement these use cases using the range function.
