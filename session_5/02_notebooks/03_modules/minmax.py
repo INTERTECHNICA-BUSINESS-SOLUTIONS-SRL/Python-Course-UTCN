@@ -10,15 +10,15 @@ _VERSION = 1
 _SUBVERSION = 0
 _RELEASE_DATE = "01/08/2023"
 
-def min_value(values):
-    """Retrieves the minimal value from a collection of values
+def min_value(*args):
+    """Retrieves the minimal value from the parameters passed to the function
     """
 
     # initialize data
     current_min_value = None
 
     # determine the minimum value
-    for value in values :
+    for value in args :
         if current_min_value is None :
             current_min_value = value
         elif current_min_value > value :
@@ -26,15 +26,15 @@ def min_value(values):
 
     return current_min_value
 
-def max_value(values):
-    """Retrieves the maximal value from a collection of values
+def max_value(*args):
+    """Retrieves the maximal value from the parameters passed to the function
     """
 
     # initialize data
     current_max_value = None
 
     # determine the maximum value
-    for value in values :
+    for value in args :
         if current_max_value is None :
             current_max_value = value
         elif current_max_value < value :
