@@ -1,3 +1,6 @@
+"""Provides the user interface elements and components.
+No real data validation and processing is done at this point.
+"""
 import tkinter as tk
 from tkinter import ttk
 

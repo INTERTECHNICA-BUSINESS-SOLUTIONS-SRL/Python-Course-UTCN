@@ -1,3 +1,7 @@
+"""Basic user interface for the order form
+Creates initial window and frame.
+"""
+
 import tkinter as tk
 from tkinter import font
 
