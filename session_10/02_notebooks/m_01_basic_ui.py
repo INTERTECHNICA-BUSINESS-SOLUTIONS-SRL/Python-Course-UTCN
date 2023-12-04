@@ -33,14 +33,14 @@ class BasicApplication():
         )
         
         # add necessary padding
-        self._window["padx"] = 20
-        self._window["pady"] = 20
+        self._window["padx"] = BasicApplication.PADDING
+        self._window["pady"] = BasicApplication.PADDING
         
         # prevent window resizing
         self._window.resizable(False, False)
         
         # init frame grid
-        self._frame.grid(padx=0, pady=0)
+        self._frame.grid(padx = 0, pady = 0)
 
     def run(self):
         self._window.mainloop()

@@ -1,7 +1,6 @@
 """Adds data validation and mock processing.
 Adds functionality for error and information messages.
 """
-import tkinter as tk
 import tkinter.messagebox as tkm
 
 from m_02_order_information_ui import OrderInformationUI
@@ -19,8 +18,7 @@ class OrderInformationForm(OrderInformationUI):
         tkm.showinfo(parent = self._window, title = "Order Entry Form", message = information_message)
                 
     # the command for information processing
-    def _process_information(self):
-        
+    def _process_information(self):        
         data = self._get_data()
 
         name_entry = data["name_entry"].strip()

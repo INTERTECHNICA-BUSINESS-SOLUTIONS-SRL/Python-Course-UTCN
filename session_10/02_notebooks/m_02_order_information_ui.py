@@ -60,7 +60,7 @@ class OrderInformationUI(BasicApplication):
     
     # generating the command name text entry area
     def _init_name(self):
-        name_entry_label = tk.Label(self._frame, text = "Order Name:")
+        name_entry_label = tk.Label(self._frame, text = "Order Name*:")
         self._name_entry = tk.Entry(self._frame, width = 30) 
         
         name_entry_label.grid(row = 1, column = 0, pady=5, sticky="w")
@@ -68,7 +68,7 @@ class OrderInformationUI(BasicApplication):
 
     # generating the command quantity text entry area
     def _init_quantity(self):
-        quantity_label = tk.Label(self._frame, text = "Order Quantity:")
+        quantity_label = tk.Label(self._frame, text = "Order Quantity*:")
         self._quantity_entry = tk.Entry(self._frame, width = 30)
         
         quantity_label.grid(row = 2, column = 0,  pady=5, sticky="w")
@@ -85,7 +85,7 @@ class OrderInformationUI(BasicApplication):
         
     # generating the model type drop down area
     def _init_model_type(self):
-        model_type_label = tk.Label(self._frame, text = "Model Type:")
+        model_type_label = tk.Label(self._frame, text = "Model Type*:")
         self._model_type_list = ttk.Combobox(
             self._frame,
             state = "readonly",
